@@ -9,6 +9,7 @@ def apply_coupons(cart, coupons)
   while counter < coupons.length
     item = find_item_by_name_in_collection(coupons[counter][:item], cart)
     coupon_finder = "#{coupons[counter][:item]} W/COUPON"
+    item_with_coupon = find_item_by_name_in_collection(coupon_finder, cart)
 end
 
 def apply_clearance(cart)
